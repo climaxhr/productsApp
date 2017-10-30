@@ -1,0 +1,169 @@
+
+<div class="modal modal-narrow modal-center" id="products-modal" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title">Products</h5>
+				<button type="button" class="close modal-close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">×</span>
+				</button>
+			</div>
+			<div class="modal-body">
+	<div class="tabs" id="products-tabs">
+		<ul  class="nav nav-pills">
+			<li class="active">
+				<a href="#products-Fixed" data-toggle="tab" loc>Fixed</a>			
+			</li>
+			<li class="profile-private">
+				<a href="#products-Movable" data-toggle="tab" loc>Movable</a>
+			</li>
+			<li class="profile-private">
+				<a href="#products-other" data-toggle="tab" loc>Other</a>
+			</li>
+		</ul>
+		
+		<div class="tab-content clearfix">
+			<div class="tab-pane active" id="products-Fixed">
+				 <div id="products-group-fixed" class="panel-collapse products-dropdown-menu collapse in">
+			        <div class="fixed"> 
+			       
+			         </div>
+			      </div>				
+			</div>
+			<div class="tab-pane" id="products-Movable">
+				<div id="products-group-movable" class="panel-collapse products-dropdown-menu collapse in">
+			        <div class="movable"> 
+			       
+			         </div>
+			      </div>
+			</div>
+			<div class="tab-pane" id="products-other">
+				<div id="products-group-other" class="panel-collapse products-dropdown-menu collapse in">
+        			<div class="other"> 
+       
+        	 		</div>
+      			</div>
+			</div>
+			
+		</div>
+		
+	</div>
+			<div id="product-details">		
+			<div class="form-group">
+                    <label>Product name</label>
+                    <input type="text" id="product-name" placeholder="Product name" class="form-control product-data">
+             </div>
+             <div class="form-group">
+                    <label>Long name</label>
+                    <input type="text" id="product-long-name" placeholder="Long name" class="form-control product-data">
+             </div>
+            <div class="form-group">
+                    <label>Category</label>
+                    <select id="product-category" class="form-control product-data">
+                    	<option value="2">Fixed</option>
+                    	<option value="3">Movable</option>
+                    	<option value="4">Other</option>
+                    </select>
+                                     
+            </div>
+            <div class="form-group">
+                    <label>Price</label>
+                    <input type="text" id="product-price" placeholder="Price" class="form-control product-data">
+             </div>
+             <div class="form-group">
+                    <label>Type</label>
+                    <select id="product-type" class="form-control product-data">
+                    	<option value="1">Service</option>
+                    	<option value="2">Product</option>
+                    	<option value="3">Combinated</option>
+                    </select>                              
+            </div>
+            <div class="form-group">
+                    <label>Tax percent</label>
+                    <input type="text" id="product-tax-percent" placeholder="Tax percent" class="form-control product-data">
+             </div>
+             <div class="form-group">
+                    <label>Tax class</label>
+                    <input type="text" id="product-tax-class" placeholder="Tax class" class="form-control product-data">
+             </div>
+             <div class="form-group">
+                    <label>Stock</label>
+                    <input type="text" id="product-stock" placeholder="Stock" class="form-control product-data">
+             </div>
+             <div class="form-group">
+                    <label>Discount</label>
+                    <input type="text" id="product-discount" placeholder="Discount" class="form-control product-data">
+             </div>
+             <div class="form-group">
+                    <label>Active</label>
+                    <input type="text" id="product-active" placeholder="Active" class="form-control product-data">
+             </div>
+             <div class="form-group">
+                    <label>Last activation date</label>
+                    <input type="text" id="product-last-activation-date" placeholder="Last activation date" class="form-control product-data">
+             </div>
+             <div class="form-group">
+                    <label>Last deactivation date</label>
+                    <input type="text" id="product-last-deactivation-date" placeholder="Last deactivation date" class="form-control product-data">
+             </div>
+             <div class="form-group">
+                    <label>About</label>
+                    <input type="text" id="product-about" placeholder="About" class="form-control product-data">
+             </div>
+             <div class="form-group">                    
+                    <input type="text" id="product-gallery-id" placeholder="gallery id" class="form-control product-data hidden">
+             </div>
+             <div class="form-group">
+                    <label>Show on web</label>                  
+                    <input type="checkbox" id="product-show-on-web" placeholder="Show on web" class="form-control product-data">
+             </div>
+             <div class="form-group">                  
+                    <input type="text" id="product-main-image" placeholder="Main image" class="form-control product-data hidden">
+             </div>
+             <div class="form-group">                  
+                    <input type="text" id="product-color" placeholder="color" class="form-control product-data hidden">
+             </div>
+             <div class="form-group">                    
+                    <input type="text" id="product-unit-of-measure" placeholder="unit of measure" class="form-control product-data hidden">
+             </div>
+             <div class="form-group">
+                    <label>Initial unit</label>
+                    <input type="text" id="product-initial-unit" placeholder="initial unit" class="form-control product-data">
+             </div>
+             <div class="form-group">
+                    <label>State</label>
+                    <input type="text" id="product-state" placeholder="state" class="form-control product-data">
+             </div>
+             <div class="form-group">                
+                    <input type="text" id="product-show-on-price-list" placeholder="show on price list" class="form-control product-data hidden">
+             </div>
+                  
+			</div>
+			<br />
+			<button class="btn btn-primary btn-lg btn-block" id="btn-save-new-product">Save</button>
+			<button class="btn btn-primary btn-lg btn-block" id="btn-back-product">Back</button>
+			
+			</div>
+			<div class="row">
+				<div class="col-xs-6">
+					<button class="btn btn-primary btn-block btn-modal-bottom btn-modal-left" id="btn-new-product">New product</button> 
+				</div>
+							
+
+				<div class="col-xs-6"> 
+					<button class="btn btn-default btn-block  btn-modal-bottom btn-modal-right" data-dismiss="modal" >Cancel</button> 
+				</div>
+			</div>
+		</div>  
+
+	</div>
+
+
+	<div class="list-row template products-list-item" >
+		<span class="badge badge-sm product-name"></span> 
+		<div class="product-long-name"></div>
+		<span class="product-price dev"></span>
+	</div>
+
+</div> 
+<!-- modal products finished -->

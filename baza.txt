@@ -1,0 +1,28 @@
+delimiter $$
+
+CREATE TABLE `default_products` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `type` varchar(45) DEFAULT '0',
+  `name` varchar(45) DEFAULT NULL,
+  `long_name` varchar(300) DEFAULT NULL,
+  `category` varchar(45) DEFAULT '0',
+  `price` decimal(10,2) DEFAULT NULL,
+  `tax_percent` varchar(45) DEFAULT '25',
+  `tax_class` varchar(45) DEFAULT '1',
+  `stock` varchar(45) DEFAULT '0',
+  `discount` varchar(45) DEFAULT '0',
+  `active` varchar(1) DEFAULT '1',
+  `last_activation_date` datetime DEFAULT NULL,
+  `last_deactivation_date` datetime DEFAULT NULL,
+  `about` varchar(400) DEFAULT NULL,
+  `gallery_id` varchar(45) DEFAULT '0',
+  `show_on_web` varchar(1) DEFAULT '1',
+  `main_image` varchar(45) DEFAULT '0',
+  `color` varchar(45) DEFAULT '#ffc',
+  `unit_of_measure` varchar(45) DEFAULT '0',
+  `initial_unit` varchar(45) DEFAULT '1',
+  `state` varchar(45) DEFAULT '0',
+  `show_on_price_list` varchar(1) DEFAULT '1',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=128 DEFAULT CHARSET=utf8$$
+
